@@ -1,0 +1,591 @@
+/* Nav CSS */
+
+:root{
+    --bg-white:#fff;
+    --bg-black:#000;
+    --bg-of-white:#cdcdcd;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: system-ui;
+}
+  
+header#header {
+    padding: 20px 30px;
+    background-color: var(--bg-of-white);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 195px;
+}
+
+.main-nav ul {
+    margin: 0 auto;
+    display: inline-flex;
+    font-size: 20px;
+}
+
+ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 12px;
+    color: var(--bg-black);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+label{
+    color: #000000;
+    font-size: 20px;
+}
+
+input#checkbox,label {
+    display: none;
+}
+
+i.fa-xmark {
+    display: none;
+}
+  
+  .container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 15px;
+  }
+  .container1 img {
+    width: 100%;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 100ms ease-out;
+  }
+  .container1 img:hover {
+    transform: scale(1.04);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  a:active,a:hover,a:focus {
+    color: #cc2229;
+}
+
+section#banner {
+    max-width: 100%;
+    height: 700px;
+    background-position: left;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/d5c341140435035.6241db2365c87.jpg);
+}
+
+.hero {
+    max-width: 1200px;
+    padding: 150px 0px;
+    margin: 0 auto;
+    line-height: 145px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #cdcdcd;
+    font-size: 120px;
+    font-style: italic;
+}
+
+.leftcol {
+    width: 50%;
+    padding: 50px;
+}
+
+.leftcol h2 {
+    font-size: 70px;
+    color: #cc2229;
+    margin: 0 auto;
+}
+
+.sec {
+    padding: 120px 0px;
+    background-image: url(images/race.png);
+    background-repeat: no-repeat;
+    background-position: 1% 31%;
+    background-size: 537px;
+}
+
+.sec1 {
+    padding: 50px 0px;
+    background-image: url(images/race.png);
+    background-repeat: no-repeat;
+    background-position: 2% 25%;
+    background-size: 537px;
+}
+
+section#text-row {
+    background-image: url(images/tyre.jpg);
+    background-position: 0% 100%;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+section#text-row1 {
+    background-image: url(images/tyre.jpg);
+    background-position: 0% 100%;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.img-cnt img {
+    width: 600px;
+    height: auto;
+}
+
+.gallery h2 {
+    font-size: 45px;
+    margin: 0 auto;
+}
+
+.gallery {
+    text-align: center;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0dda1140448417.624203f68c0c6.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div.transbox {
+    background-color: rgb(0 0 0 / 65%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
+    padding: 90px 30px;
+}
+
+.gallery h2 {
+    font-size: 45px;
+    margin: 0 auto;
+    color: #cdcdcd;
+}
+
+.gallery p {
+    font-size: 18px;
+    color: #cdcdcd;
+}
+
+section#row-txt {
+    padding: 120px 40px;
+    background-image: url(https://wallpaperaccess.com/full/11207.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#faq {
+    background-image: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/Configurator_Model_choose/2020_02_25/Gateway%20CC%20HURACAN_EVO_1920_794.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: bottom right;
+}
+
+.lft {
+    max-width: 49%;
+    padding: 40px;
+    background-color: #fffffff7;
+}
+
+.rght {
+    max-width: 49%;
+    padding: 40px;
+    color: #fff;
+    margin-top: 150px;
+    background-color: #cc2229f5;
+}
+
+.lft h2 {
+    font-size: 35px;
+    color: #cc2229;
+}
+
+.rght h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+
+/* faq section css*/
+
+details {
+    /*  fixed heigh needed to achive smooth openning animation  */
+    height: 70px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 30px 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .fq h2 {
+    font-size: 70px;
+    color: #cc2229;
+    margin: 0 auto;
+}
+
+details p {
+    font-size: 20px;
+}
+
+.fq {
+    max-width: 980px;
+    margin: auto;
+    padding: 60px 0px 200px 0px;
+}
+  details > summary {
+    list-style: none;
+  }
+  
+  summary {
+    border-bottom: 2px solid #e0dbd1;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 0 10px 2px;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::after {
+    content: "";
+    display: block;
+    background: url("images/arrow.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-size: contain;
+    margin: 0 6px 0 0;
+    transform: rotate(0);
+    transition: 0.25s all ease;
+  }
+  
+  details[open] summary:after {
+    transform: rotate(90deg);
+  }
+  
+  /* Smoothing animation on open/close */
+  
+  details[open] {
+    height: 170px;
+    overflow: hidden;
+  }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px 10px 20px 0px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.9; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container2 {
+    position: relative;
+    display: none;
+    width: 100%;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  section#\33 60 {
+    padding: 100px 80px;
+}  
+
+button, button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #cc2229 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    margin-top: 40px;
+    box-shadow: 6px 0px 0px #cdcdcd;
+    outline: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'Explore now';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #cc2229 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+
+  .gmi {
+    background-image: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/augmented-reality/huracan/huracan_evo/H-EVO_3.png);
+    height: 267px;
+    width: 34%;
+    margin-top: -237px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: scroll;
+    display: inline-block;
+}
+
+section#sub {
+    padding: 80px 0px;
+}
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	width: 945px;
+	height: 474px;
+    margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px #cc222966;
+}
+
+span.last {
+    width: 150px;
+    height: auto;
+    color: #fff;
+    display: inline-block;
+    padding: 16px;
+    font-size: 18px;
+    margin-left: 10px;
+    background: linear-gradient(45deg, transparent 5%, #cc2229 5%);
+    text-align: center;
+    box-shadow: 6px 0px 0px #cdcdcd;
+}
+
+input.email {
+    padding: 15px 15px;
+    height: 55px;
+    width: 290px;
+    border: 1px solid #cc22292b;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subscribe__title {
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 18px;
+}
+
+.subscribe__copy {
+	max-width: 450px;
+	text-align: center;
+	margin-bottom: 53px;
+	line-height: 1.5;
+}
+
+footer#footer {
+    padding: 10px 35px;
+    background-color: #cdcdcd;
+}
+
+.left-txt p {
+    font-size: 15px;
+    color: #111;
+}
+
+i.fa-solid.fa-basketball,i.fa-brands.fa-instagram-square,i.fa-brands.fa-twitter {
+    margin-left: 10px;
+    color: #111;
+}
+
+
+
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+@media screen and (max-width:764px) {
+.main-nav ul {
+    padding: 0px;
+}
+
+label {
+    display: block;
+    transition: display 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+ul li a {
+    color: #cdcdcd;
+
+}
+
+ul li {
+    margin: 15px;
+}
+.main-nav ul {
+    display: block;
+}
+
+.main-nav {
+    position: absolute;
+    top: 12px;
+    height: 270px;
+    width: 328px;
+    padding: 20px 20px;
+    background-color: #000;
+    right: -600px;
+    z-index: 999;
+    transition: right 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+input:checked ~ .main-nav{
+    right: 0px;
+}
+
+input:checked ~ label{
+    z-index: 99999;
+    color: #fff;
+}
+
+input:checked ~ label>i.fa-xmark {
+    display: block;
+    color: #cdcdcd;
+}
+
+input:checked ~ label>i.fa-bars {
+    display:none;
+}
+
+.hero {
+    padding: 45px 30px;
+}
+
+.gallery h2 {
+    font-size: 40px;
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+section#banner {
+    height: 400px;
+    background-position: 40% 43%;
+}
+    
+}

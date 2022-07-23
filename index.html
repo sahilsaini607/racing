@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navcss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a32f35b0a2.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+    <title>Racing tag</title>
+</head>
+<body>
+    <!--Header HTML-->
+ <Header id="header">
+     <div class="container">
+         <div class="logo">
+            <img src="images/razor.png" alt="Dribbble_logo">
+         </div>
+         <input type="checkbox" id="checkbox" name=" ">
+         <label for="checkbox"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i>
+        </label>
+         <div class="main-nav">
+             <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li> 
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+         </div>
+     </div>
+ </Header>
+ <section id="banner">
+     <div class="hero">
+         <h1>
+             Race To The<br>Edge #
+         </h1>
+         <button>Explore now</button>
+     </div>
+ </section>
+ <section id="text-row">
+     <div class="container sec">
+         <div class="leftcol">
+        <h2>Dare to leap</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+        </p>
+        <button>Explore now</button>
+         </div>
+         <div class="img-cnt">
+             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f051c3107711481.5fad24d573231.jpg" alt="">
+         </div>
+     </div>
+ </section>
+ <section id="gallery">
+    <div class="gallery">
+        <div class="transbox">
+        <h2>Choose your winning clean shot</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.</p>
+      <!-- Photo Grid -->
+      <div class="container1">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/71a6a565534565.5af7ee7c94eee.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/fd3f0a89857723.5e039c0748415.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9f182789857723.5e039c074593b.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/caf4d989857723.5e039c0747891.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/471f4a89857723.5e039c07492ad.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/d60ed289857723.5e039c0748b98.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2db7e389857723.5e039c0745f41.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/30e97589857723.5e039c07446ce.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/95e98d89857723.5e039c0749bb2.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ddd92c89857723.5e039c0744f9a.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e725cf89857723.5e039c0746ce9.jpg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c9381289857723.5e039c07465b0.jpg">
+      </div>
+    </div>
+    </div>  
+ </section>
+ <section id="text-row1">
+    <div class="container sec1">
+            <div class="leftcol">
+                <h2>Dare to leap</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+                </p>
+                <button>Explore now</button>
+            </div>
+            <div class="img-cnt">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/d1b7d2107711481.5fad24d56f627.jpg" alt="">
+            </div>
+    </div>
+
+    <div class="container sec1">
+        <div class="leftcol">
+            <h2>Dare to leap</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit, a placeat veniam.
+            </p>
+            <button>Explore now</button>
+        </div>
+        <div class="img-cnt">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/00fc7090100607.5e0dd42c718b5.jpg" alt="">
+        </div>
+</div>
+</section>
+<section id="360">
+    <div class="container2">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+        <div id="jap"></div>
+      </div>
+    <div class="row">
+        <div class="column">
+          <img src="https://as1.ftcdn.net/v2/jpg/04/42/98/72/1000_F_442987244_flar1iUNCEP1Apxbn3xijDlEsmemr0QM.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="https://as2.ftcdn.net/v2/jpg/03/14/05/27/1000_F_314052783_mLbmSUNdYHKE3IXjq2U1yDyJzd5sZofB.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="https://as1.ftcdn.net/v2/jpg/04/42/98/72/1000_F_442987244_flar1iUNCEP1Apxbn3xijDlEsmemr0QM.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="https://as2.ftcdn.net/v2/jpg/03/14/05/27/1000_F_314052783_mLbmSUNdYHKE3IXjq2U1yDyJzd5sZofB.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+</section>
+<section id="row-txt">
+  <div class="container">
+<div class="lft">
+<h2> Lorem ipsum dolor sit.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus expedita ratione dolorem cumque ipsa inventore alias, repellendus nihil adipisci, cupiditate dolor obcaecati quasi quis eum accusamus sit impedit hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus expedita ratione dolorem cumque ipsa inventore alias, repellendus nihil adipisci, cupiditate dolor obcaecati quasi quis eum accusamus sit impedit hic.</p>
+</div>
+<div class="rght">
+  <h2> Lorem ipsum dolor sit.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus expedita ratione dolorem cumque ipsa inventore alias, repellendus nihil adipisci, cupiditate dolor obcaecati quasi quis eum accusamus sit impedit hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus expedita ratione dolorem cumque ipsa inventore alias, repellendus nihil adipisci, cupiditate dolor obcaecati quasi quis eum accusamus sit impedit hic.</p>
+</div>
+</div>
+</section>
+<section id="faq">
+    <div class="fq">
+    <h2>FAQ</h2>
+    <details open>
+      <summary>Lorem, ipsum.</summary>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perspiciatis eius quo, quisquam facilis pariatur nobis laudantium neque distinctio vel laborum ratione delectus, deserunt sapiente reprehenderit, cupiditate odio sunt nesciunt.</p>
+    </details>
+    <details>
+      <summary>Lorem, ipsum.</summary>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perspiciatis eius quo, quisquam facilis pariatur nobis laudantium neque distinctio vel laborum ratione delectus, deserunt sapiente reprehenderit, cupiditate odio sunt nesciunt.</p>
+    </details>
+    <details>
+      <summary>Lorem, ipsum.</summary>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perspiciatis eius quo, quisquam facilis pariatur nobis laudantium neque distinctio vel laborum ratione delectus, deserunt sapiente reprehenderit, cupiditate odio sunt nesciunt.</p>
+    </details>
+</div>
+  </section>
+<section id="map">
+  <div class="container4">
+  <div class="mappa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55972.70555788929!2d77.05774346276114!3d28.740634937918433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a47a1803d%3A0xedfb8cc477815e2f!2sRohini%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1649609990938!5m2!1sen!2sin" width="100%" height="232" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="gmi">
+
+  </div>
+</div>
+</section> 
+<section id="sub">
+  <div class="subscribe">
+    <h2 class="subscribe__title">Let's keep in touch</h2>
+    <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+    <div class="form">
+      <input type="email" class="email" placeholder="Enter your email address" />
+      <span class="last">Send</span>
+    </div>
+  </div>
+</section>
+<!--Footer HTML-->
+<footer id="footer">
+  <div class="container">
+      <div class="left-txt">
+          <p>&#169; Designed by Handa 2022
+          </p>
+      </div>
+      <div class="social-area">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram-square"></i>
+      <i class="fa-solid fa-basketball"></i>
+      </div>
+  </div>
+</footer> 
+</body>
+</html>
